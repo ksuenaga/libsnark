@@ -11,8 +11,8 @@ mkdir -p $DEPINST
 mkdir -p $DEPSRC
 
 cd $DEPSRC
-[ ! -d xbyak ] && git clone git://github.com/herumi/xbyak.git
-[ ! -d ate-pairing ] && git clone git://github.com/gstew5/ate-pairing.git
+[ ! -d xbyak ] && git clone https://github.com/herumi/xbyak.git
+[ ! -d ate-pairing ] && git clone https://github.com/gstew5/ate-pairing.git
 cd ate-pairing
 make -j SUPPORT_SNARK=1
 cd ..
